@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Installer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="231.731" Width="525" WindowStyle="None">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <DockPanel x:Name="panel1" Grid.Column="0" Background="#FF2D2D30" />
+        <DockPanel x:Name="panel2" Grid.Column="1" Background="#FF441A5D" />
+        <Label x:Name="textlogo" Grid.Column="1" FontWeight="Black" Foreground="WhiteSmoke" HorizontalAlignment="Center" Margin="50" FontSize="30" >Server Installer</Label>
+        <Label Grid.Column="1" Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" >Пожалуйста подождите</Label>
+        <Image Grid.Column="0" Source="pack://siteoforigin:,,,/Resources/LocalIISSites_16x.png" VerticalAlignment="Top" Height="31" Margin="10,5,10,10"/>
     </Grid>
 </Window>
